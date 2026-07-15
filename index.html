@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Landing Page</title>
+             <link rel="stylesheet" href="./public/styles.css">
+
+    </head>
+    <body>
+        <h1>Landing Page</h1>
+
+        <div>
+            <button id="menu">Menu</button>
+            <ul id="options">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education And Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="modal">
+            <button id="close">Close</button>
+            <div class="modal-container">
+                <h2>Lets Grow Together</h2>
+                <p>I'm a Full Stack Developer with the ability to <span>solve</span>,<span>Build</span>,<span>Style</span>, and <span>Deploy</span> complex projects</p>
+                <p><strong>Looking For:</strong> Internships, Junior Developer roles</p>
+                <p><strong>Based in:</strong> Johhanesburg south, South Africa </p>
+
+                <div id="text-me">
+                    <a href="#contact" class="close">Send Message</a>
+                    <a href="#" class="download">Download Cv</a>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <section id="home">
+            <h1>Hi! I'm Rethabile Liphalane</h1>
+            <p>Self Taught Developer</p>
+            <a href="#">My Portfolio </a>
+            <button id="open-modal">Hire Me</button>
+        </section>
+
+        <section id="education">
+            <div>
+                <h1>Education</h1>
+                <div class="education-container">
+                    <p><strong>Formal:</strong> Matric</p>
+                    <p><strong>First coding journey:</strong> FreecodeCamp</p>
+                    <p><strong>improved coding skills:</strong> The Oding Project</p>
+                    <p><strong>Gaing more problem solving skills:</strong> Leetcode</p>
+                </div>
+            </div>
+
+            <div>
+                <h2>Experience</h2>
+                <div class="experience-container">
+                    <h3>Web Developer | Codeveda Technologies</h3>
+                    <p><strong>Date: </strong>July 2026 </p>
+                    <p>Selected for intensive Frontend and Backend Development program focusing on production-ready code</p>
+                    <p>Building and deploying 6 web Apllication using HTML,CSS,vanilla Javascript,REACT and EXPRESS</p>
+                    <li>Implementing responsive Design, DOM Manipulation,Local storage,Form Manipulation,Authentication,Sessions and Api Intergration</li>
+                    <li>Practicing Git Vesion control and depoying projects via Render</li>
+                    <li>Tools: Node.js, Express,postreSQL,or session handling.</li>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            
+            <div class="skills-container">
+                <h2>Tech Skills</h2>
+
+
+                <div class="catagory-cntainer">
+                    <h3>Front end</h3>
+                    <ul>
+                        <li>HTML and CSS</li>
+                        <li>Javascript ES6</li>
+                        <li>Sass</li>
+                        <li>Boostraps</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+
+                <div class="catagory-container">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>REST API</li>
+                        <li>Authentication and authorization</li>
+                        <li>postgreSQL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-container">
+                <h2>Soft skills</h2>
+                <p></p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="name-container">
+                    <label>Name</label>
+                    <input type="text" id="name" >
+                </div>
+
+                  <div class="name-container">
+                    <label>Email</label>
+                    <input type="email" id="email" >
+                </div>
+
+                  <div class="name-container">
+                    <label>Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <button type="submit" id="submit">Send Message</button>
+            </form>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
