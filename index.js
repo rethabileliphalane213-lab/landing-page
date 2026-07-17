@@ -5,9 +5,12 @@ const displayModal=document.querySelector(".modal")
 const closeModal=document.getElementById("close")
 const nameInput=document.getElementById("name")
 const emailInput=document.getElementById("email")
+const numberInput=document.getElementById("number")
+const subjectInput=document.getElementById("subject")
 const messageInput=document.getElementById("message")
-const submitBtn=document.getElementById("submit")
+const submitBtn=document.getElementById("submit-btn")
 const modalOptions=document.querySelectorAll("#options a")
+const form = document.querySelector("form");
 
 
 let isVisible=false
@@ -36,16 +39,26 @@ menuBtn.addEventListener("click",()=>{
 
 
 openModal.addEventListener("click",()=>{
-    displayModal.style.display="block"
+    displayModal.style.display="flex"
 })
 
 closeModal.addEventListener("click",()=>{
     displayModal.style.display="none"
 })
 
-submitBtn.addEventListener("click",(e)=>{
-    e.preventDefault()
-    if(!nameInput.value || !emailInput.value || !messageInput.value){
-        return alert("contact form must be Filled correctyly before sending")
+submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (
+        !nameInput.value.trim() ||
+        !emailInput.value.trim() ||
+        !numberInput.value.trim() ||
+        !subjectInput.value.trim() ||
+        !messageInput.value.trim()
+    ) {
+        alert("Please fill in all fields before sending.");
+        return;
     }
-})
+
+    form.submit();
+});

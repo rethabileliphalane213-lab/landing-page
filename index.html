@@ -6,18 +6,20 @@
 
     </head>
     <body>
-        <h1>Landing Page</h1>
+     
 
-        <div>
-            <button id="menu">Menu</button>
-            <ul id="options">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#education">Education And Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <header>
+    <h2 class="logo">RL.</h2>
 
+    <button id="menu">☰ Menu</button>
+
+    <ul id="options">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contacts">Contact</a></li>
+    </ul>
+</header>
         <div class="modal">
             <button id="close">Close</button>
             <div class="modal-container">
@@ -28,7 +30,7 @@
 
                 <div id="text-me">
                     <a href="#contact" class="close">Send Message</a>
-                    <a href="#" class="download">Download Cv</a>
+                    <a href="./public/rethabile2026 (1).pdf" class="download">Download Cv</a>
                 </div>
             </div>
             
@@ -38,7 +40,7 @@
         <section id="home">
             <h1>Hi! I'm Rethabile Liphalane</h1>
             <p>Self Taught Developer</p>
-            <a href="#">My Portfolio </a>
+            <a href="https://my-personal-portfolio-1-8xa2.onrender.com">My Portfolio </a>
             <button id="open-modal">Hire Me</button>
         </section>
 
@@ -49,7 +51,7 @@
                     <p><strong>Formal:</strong> Matric</p>
                     <p><strong>First coding journey:</strong> FreecodeCamp</p>
                     <p><strong>improved coding skills:</strong> The Oding Project</p>
-                    <p><strong>Gaing more problem solving skills:</strong> Leetcode</p>
+                    <p><strong>Gained more problem solving skills:</strong> Leetcode</p>
                 </div>
             </div>
 
@@ -59,7 +61,7 @@
                     <h3>Web Developer | Codeveda Technologies</h3>
                     <p><strong>Date: </strong>July 2026 </p>
                     <p>Selected for intensive Frontend and Backend Development program focusing on production-ready code</p>
-                    <p>Building and deploying 6 web Apllication using HTML,CSS,vanilla Javascript,REACT and EXPRESS</p>
+                    <p>Building and deploying 6 web Apllication using HTML,CSS,vanilla Javascript,Node js,REACT and EXPRESS</p>
                     <li>Implementing responsive Design, DOM Manipulation,Local storage,Form Manipulation,Authentication,Sessions and Api Intergration</li>
                     <li>Practicing Git Vesion control and depoying projects via Render</li>
                     <li>Tools: Node.js, Express,postreSQL,or session handling.</li>
@@ -97,30 +99,46 @@
             </div>
             <div class="skill-container">
                 <h2>Soft skills</h2>
-                <p></p>
+                 <p>
+        Beyond technical skills, I bring a strong work ethic, curiosity, and a
+        commitment to continuous improvement. I enjoy collaborating with others,
+        solving challenging problems, and building reliable applications that
+        provide a great user experience.
+    </p>
+
+    <ul>
+        <li>Problem Solving</li>
+        <li>Communication</li>
+        <li> Team Collaboration</li>
+        <li> Adaptability</li>
+        <li> Time Management</li>
+        <li> Critical Thinking</li>
+        <li> Attention to Detail</li>
+        <li> Continuous Learning</li>
+    </ul>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <div class="name-container">
-                    <label>Name</label>
-                    <input type="text" id="name" >
-                </div>
+       
+   <section class="contacts" id="contacts">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form action="https://formsubmit.co/rethabileliphalane213@gmail.com"  method="POST">
 
-                  <div class="name-container">
-                    <label>Email</label>
-                    <input type="email" id="email" >
-                </div>
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" name="full-name" id="name"/>
+        <input type="email" placeholder="Email" name="email" id="email"/>
+      </div>
 
-                  <div class="name-container">
-                    <label>Message</label>
-                    <textarea id="message"></textarea>
-                </div>
-                <button type="submit" id="submit">Send Message</button>
-            </form>
-        </section>
+      <div class="input-box">
+        <input type="number" placeholder="Phone Number" name="number" id="number"/>
+        <input type="text" placeholder="Subject" name="Subject" id="subject"/>
+      </div>
+
+
+      <textarea placeholder="Your Message" name="msg" id="message"></textarea>
+      <input type="submit" value="Send Message" class="btn"  id="submit-btn"/>
+    </form>
+   </section>
         <script src="index.js"></script>
     </body>
 </html>
