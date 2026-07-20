@@ -19,10 +19,10 @@ function toggleMenu(){
     isVisible=!isVisible
     if(isVisible){
         navOptions.style.display="block"
-        menuBtn.style.border="2px solid gold"
+      
     }else{
         navOptions.style.display="none"
-        menuBtn.style.border="2px solid red"
+       
     }
 }
 
@@ -50,11 +50,7 @@ submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
     if (
-        !nameInput.value.trim() ||
-        !emailInput.value.trim() ||
-        !numberInput.value.trim() ||
-        !subjectInput.value.trim() ||
-        !messageInput.value.trim()
+        !nameInput.value.trim() || !emailInput.value.trim() ||!numberInput.value.trim() ||!subjectInput.value.trim() || !messageInput.value.trim()
     ) {
         alert("Please fill in all fields before sending.");
         return;
